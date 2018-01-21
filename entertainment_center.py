@@ -1,6 +1,8 @@
 import fresh_tomatoes
 import media
 
+# Creating 3 objects of Movie in the module "media"
+
 ddlj = media.Movie("Dilwale Dulhania Le Jayenge",
 				   "Raj and Simran meet on Eurail and unknowingly fall for each other. Raj is shattered to learn that she is already engaged. He follows Simran to India in order to win her and her strict father's heart.",
 				   "https://www.youtube.com/watch?v=c25GKl5VNeY&vl=en",
@@ -16,5 +18,10 @@ cdi = media.Movie("Chak De! India",
 				   "https://www.youtube.com/watch?v=6a0-dSMWm5g",
 				   "http://www.gstatic.com/tv/thumb/movieposters/168383/p168383_p_v8_ae.jpg")
 
+# Creating a list of 3 movie objects
+
 allMovies = [ddlj, swades, cdi]
+
+# Sending the movie list as input to the fresh tomatoe module's function called open_movies_page
+
 fresh_tomatoes.open_movies_page(allMovies)
